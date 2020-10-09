@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const BookSchema = new mongoose.Schema({
+const VideoSchema = new mongoose.Schema({
   name: String,
   type: {
     type: String,
-    default: 'book',
+    default: 'video',
   },
   createdAt: {
     type: Date,
@@ -12,4 +12,4 @@ const BookSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Book', BookSchema);
+module.exports = mongoose.model('Book', VideoSchema);
