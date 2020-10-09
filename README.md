@@ -27,6 +27,7 @@ A simple example of a Node App using Microservices, Docker and Nginx.
 
   - Check first for the container id: `$ docker ps`
   - `$ docker stop e8` (You can use just the first few characters of it)
+  - Stop all: `$ docker stop $(docker ps -aq)`
 
 - **Dockerfile** is a file to specify how Docker should package your application.
   - `FROM ` base container;

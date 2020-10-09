@@ -12,4 +12,4 @@ const VideoSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Book', VideoSchema);
+module.exports = mongoose.model('Video', VideoSchema);

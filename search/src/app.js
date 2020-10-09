@@ -1,8 +1,8 @@
 const fetch = require('node-fetch');
 const express = require('express');
 // ToDo: extract the common code (models) in to a npm module
-const Video = require('./models/video_model');
-const Book = require('./models/books_model');
+const Video = require('./models/video');
+const Book = require('./models/book');
 const app = express();
 
 app.get('/', (req, res) => {

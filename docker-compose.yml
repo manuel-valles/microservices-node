@@ -1,4 +1,9 @@
 services:
+  web:
+    build: './web'
+    ports:
+      - '3000:3000'
+
   search:
     build: './search'
     ports:
