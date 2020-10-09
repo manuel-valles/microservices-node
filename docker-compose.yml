@@ -1,0 +1,32 @@
+services:
+  search:
+    build: './search'
+    ports:
+      - '3001:3000'
+    depends_on:
+      - db
+    environment:
+      - MONGO_DB_URI=mongodb://db/microservices
+
+  books:
+    build: './books'
+    ports:
+      - '3002:3000'
+    depends_on:
+      - db
+    environment:
+      - MONGO_DB_URI=mongodb://db/microservices
+
+  videos:
+    build: './videos'
+    ports:
+      - '3003:3000'
+    depends_on:
+      - db
+    environment:
+      - MONGO_DB_URI=mongodb://db/microservices
+
+  db:
+    image: mongo
+    ports:
+      - '27017:27017'

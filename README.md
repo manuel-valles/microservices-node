@@ -20,7 +20,7 @@ A simple example of a Node App using Microservices, Docker and Nginx.
       - `-p` port from local to container like `3000:3000`
       - `-d` run container in background
   - Example of running mongo in a Docker container: `$ docker run -d -p 27017:27017 mongo`
-  - Speed everything up: `$ docker-compose up -d`
+  - Speed everything up: `$ docker-compose up -d`. For this, you will need a Docker Compose file
   - Download a container: `$ docker pull mongo`
 
 - Stop
@@ -28,7 +28,7 @@ A simple example of a Node App using Microservices, Docker and Nginx.
   - Check first for the container id: `$ docker ps`
   - `$ docker stop e8` (You can use just the first few characters of it)
 
-- **Dockerfiler** is a file to specify how Docker should package your application.
+- **Dockerfile** is a file to specify how Docker should package your application.
   - `FROM ` base container;
   - `COPY . /{sourceFolder}` copy everything in the current directory to the source folder;
   - `WORKDIR /{sourceFolder}` all the commands will run inside this sourced folder;
