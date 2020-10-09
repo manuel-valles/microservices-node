@@ -1,12 +1,14 @@
 # Microservices with NodeJS
 
-A really simple example of a Node App using Microservices, Docker and Nginx.
+A simple example of a Node App using Microservices, Docker and Nginx.
 
-## CONTAINERS
+## Containers
 
-- https://hub.docker.com/editions/community/docker-ce-desktop-windows/
-- You may need the Linux Kernel update package:
-  https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
+- Installation for Windows:
+
+  - https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+  - You may need the Linux Kernel update package:
+    https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel
 
 - Run
   - Open a command-line terminal like PowerShell, and try out some Docker commands!
