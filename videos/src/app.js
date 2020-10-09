@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ msg: 'videos service' });
+  res.json({ msg: 'Videos Service' });
 });
 
 app.get('/api/v1/videos', async (req, res) => {

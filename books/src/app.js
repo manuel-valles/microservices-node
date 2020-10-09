@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ msg: 'books service' });
+  res.json({ msg: 'Books Service' });
 });
 
 app.get('/api/v1/books', async (req, res) => {
