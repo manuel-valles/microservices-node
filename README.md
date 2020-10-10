@@ -58,3 +58,7 @@ A simple example of a Node App using Microservices, Docker and Nginx.
   - Info & Stats:
     - `$ docker logs {CONTAINER}` show the logs of a container
     - `$ docker stats` show stats of running containers
+
+## Nginx
+
+NGINX is open source software for web serving, reverse proxying, caching, load balancing,...NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
