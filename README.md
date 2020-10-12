@@ -62,3 +62,22 @@ A simple example of a Node App using Microservices, Docker and Nginx.
 ## Nginx
 
 NGINX is open source software for web serving, reverse proxying, caching, load balancing,...NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
+
+- **default.conf** set the basic configuration for web serving:
+
+  - _try_files_ will look for files in the root (_srv/www/static_), and if it's not found it will use the _@web_ location/microservice.
+
+    ```
+      root /srv/www/static;
+      location / {
+        # Get static files from nginx first
+        try_files $uri $uri/ @web;
+      }
+      location @web {
+        proxy_pass http://web:3000;
+      }
+    ```
+
+    _localhost:3000_ < --- > _localhost:8080_
+
+    ![nginxServer](/images/nginxServer.jpg)
